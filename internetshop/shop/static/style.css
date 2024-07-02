@@ -1,0 +1,160 @@
+
+    * {
+        font-family: Arial;
+    }
+
+     body {
+    background-color: #f2f2f2;
+    }
+
+    h1 {
+        font-size: 40px;
+
+        text-align: left
+    }
+
+    .navigation {
+        text-align: center;
+        font-size: 22px
+
+    }
+
+    .navigation a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 25px;
+    background-color: #f2f2f2;
+    text-decoration: none;
+
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+        border-radius: 40px
+    }
+
+
+    .profile {
+            position: absolute;
+            top: 0;
+
+            width: 120px;
+            right: 0;
+            text-align: center;
+    }
+    .profile img {
+            width: auto;
+            height: 80px;
+    }
+    .profile h2 {
+            margin: 10;
+            font-size: 14px;
+    }
+
+
+
+
+
+
+    .product {
+
+        display: flex;
+        height: 200px;
+        margin-top: 20px;
+        border-radius: 35px;
+        margin: 20px auto;
+        background-color: #ffffff;
+        width: 70%;
+    }
+
+    h2 {
+        width: 300px;
+        padding-left: 30px;
+    }
+
+
+
+    p {
+        width: 600px;
+
+    }
+
+    button {
+
+        margin-left: auto;
+        border-radius: 15px;
+        background-color: 0000ff;
+        color: #ffffff;
+        border: none;
+        height: 100px;
+        cursor: pointer;
+    }
+
+    button1 {
+        cursor: pointer;
+
+    }
+
+    .profile img {
+    width: 50px; /* Ширина изображения */
+    height: 50px; /* Высота изображения */
+    vertical-align: top; /* Выравнивание изображения по верхнему краю */
+    margin: 5;
+
+}
+
+.profile button1 {
+    font-size: 16px; /* Размер текста */
+
+    vertical-align: top; /* Выравнивание текста по верхнему краю */
+    margin-left: 16px; /* Отступ слева от изображения */
+
+}
+
+.productDetails {
+    margin-top: 20px;
+
+    border-radius: 20px;
+
+    background: white;
+    display: flex;
+    flex-direction: row;
+
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.productPrice {
+    display: flex;
+    flex-direction: row;
+}
+
+.productTitle {
+    margin-top: 20px;
+}
+
+.productTitle * {
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.productDescription {
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    border-radius: 20px;
+
+    background: white;
+
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.productDescription * {
+    margin: 20px;
+}
