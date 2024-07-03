@@ -20,9 +20,9 @@
 <div class="product">
     <img class="productImage" src="https://i.pinimg.com/564x/37/a8/ae/37a8ae2095512429d5d0ffa5d8675378.jpg">
     <div class="productTitle">
-        <h2>Apple Watch</h2>
+        <h2>{{ product.name }}</h2>
         <div class="price">
-            <h3>100 рублей</h3>
+            <h3>{{ product.price }}</h3>
             <button>Купить</button>
         </div>
     </div>
@@ -30,5 +30,5 @@
 
 <div class="productDescription">
     <h2>Описание:</h2>
-    <p>Маленький компьютер, который выполнит часть функций секретаря и медицинского помощника. Часы, с которыми можно вообще не доставать смартфон в течение дня. С их помощью можно отвечать на звонки, просматривать уведомления, измерять показатели здоровья, считать шаги и калории.</p>
+    <p>{{ product.description }}</p>
 </div>

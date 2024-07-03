@@ -1,7 +1,7 @@
 
-
 from django.http import HttpResponse
 from django.shortcuts import render
+
 from .models import Product
 
 # Create your views here.
@@ -19,8 +19,12 @@ def home(request):
     return render(request, "index.html", {
 
         'products': products,
+        'products_found': len(products) > 0,
         'search': search,
     })
 
 def view_product(request, id):
-    return render(request, 'products.html')
+    product = Product.objects.filter(id=id).first()
+    return render(request, 'products.html', {
+        'product': product
+    })

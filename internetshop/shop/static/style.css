@@ -1,36 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 
-    * {
+* {
     font-family: "Didact Gothic";
-    }
+}
 
-     body {
+body {
     background-color: #f2f2f2;
     margin: 0;
     padding: 0;
-    }
+}
 
-   h1 {
-      font-size: 40px;
-      background-color: white;
-      text-align: left;
-      margin: 0px auto 0;
-      display: flex;
-      align-items: center;
-      height: 90px; /* уменьшить высоту */
-      padding-left: 20px;
-      padding-right: 20px;
+h1 {
+    font-size: 40px;
+    background-color: white;
+    text-align: left;
+    margin: 0px auto 0;
+    display: flex;
+    align-items: center;
+    height: 90px; /* уменьшить высоту */
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
-   }
 
-    .navigation {
+
+.navigation {
+
         text-align: center;
-        margin: 10;
-        font-size: 30px
+        margin-top: 5;
+        font-size: 25px
 
-    }
+}
 
-    .navigation a {
+.navigation a {
     display: inline-block;
     padding: 10px 20px;
     margin: 0 10px;
@@ -40,38 +42,40 @@
     color: black
 
 
-    }
+}
 
-    .productPreview {
+.productPreview {
         width: 200px;
         height: 200px;
         border-radius: 40px
-    }
+}
 
 
-    .profile {
+.profile {
             position: absolute;
             top: 0;
 
             width: 120px;
             right: 0;
             text-align: center;
-    }
-    .profile img {
+}
+
+.profile img {
             width: auto;
             height: 80px;
-    }
-    .profile h2 {
+}
+
+.profile h2 {
             margin: 10;
             font-size: 14px;
-    }
+}
 
 
 
 
 
 
-    .product {
+.product {
   display: flex;
 
 
@@ -80,24 +84,24 @@
   margin: 10px auto;
   background-color: #ffffff;
   width: 70%;
-    }
+}
 
-    h2 {
+h2 {
         width: 300px;
         padding-left: 30px;
-    }
+}
 
 
 
-    p {
+p {
         width: 570px;
         padding-left: 30px
 
-    }
+}
 
 
 
-    button {
+button {
 
         margin-left: auto;
         border-radius: 15px;
@@ -106,20 +110,17 @@
         border: none;
         height: 100px;
         cursor: pointer;
-    }
+}
 
-    button1 {
-        cursor: pointer;
+button1 {
+    cursor: pointer;
+}
 
-    }
-
-    .profile img {
+.profile img {
     width: 50px; /* Ширина изображения */
     height: 50px; /* Высота изображения */
     vertical-align: top; /* Выравнивание изображения по верхнему краю */
     margin: 6;
-
-
 }
 
 .profile button1 {
@@ -198,7 +199,7 @@
     background: white;
     border-radius: 40px;
     padding: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
 
     display: flex;
     align-items: center;
@@ -213,4 +214,16 @@
     border-radius: 40px;
     width: 100%;
     margin-right: 10px;
+}
+
+
+.review {
+    background-color: #efefef;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+a {
+text-decoration: none;
+color: black;
 }
