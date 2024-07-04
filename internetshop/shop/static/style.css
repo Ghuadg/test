@@ -179,9 +179,9 @@ button1 {
 }
 
 .productDescription p{
-    margin-left: 2px;
+
     width: 705px;
-    padding-left: 15;
+    padding-left: 30;
 
 }
 
@@ -227,3 +227,4 @@ a {
 text-decoration: none;
 color: black;
 }
+
