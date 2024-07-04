@@ -32,3 +32,26 @@
     <h2>Описание:</h2>
     <p>{{ product.description }}</p>
 </div>
+
+<div class="productDescription">
+    <h2>Отзывы:</h2>
+    <p>Мы ценим ваше мнение! Пожалуйста, оставьте отзыв о наших товарах и услугах, чтобы помочь нам улучшиться и помочь другим клиентам сделать правильный выбор. Ваше мнение важно для нас!</p>
+    <div class="review">
+        <h3>Автор: </h3>
+        <h3>Оценка: <span style="color: green">положительная</span></h3>
+        <h3>Срок использования: <span style="color: green">12 месяцев</span></h3>
+        <p>Отзыв</p>
+    </div>
+
+    <form class="createReview">
+        <label for="author">Автор:</label>
+        <input name="author" >
+        <label for="rating">Оценка:</label>
+        <input name="rating" placeholder="Укажите вашу оценку" >
+
+        <label for="duration">Срок использования (в месяцах):</label>
+        <input name="duration" placeholder="Укажите срок использования" >
+        <label for="review">Текст отзыва:</label>
+        <textarea name="review" placeholder="Оставьте ваш отзыв"></textarea>
+        <button>Опубликовать</button>
+    </form>
