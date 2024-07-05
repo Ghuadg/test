@@ -8,6 +8,10 @@ class Product(models.Model):
     price = models.IntegerField()
     image_url = models.CharField(max_length=1024)
 
+    speed = models.IntegerField(null=True, blank=True)
+    ram = models.IntegerField(null=True, blank=True)
+    year = models.IntegerField(null=True, blank=True)
+    os = models.TextField(null=True, blank=True)
 
     def __str__(self):
         return self.name

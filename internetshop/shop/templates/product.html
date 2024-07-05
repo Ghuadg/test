@@ -28,9 +28,24 @@
     </div>
 </div>
 
-<div class="productSpecifications">
+<div class="productDescription">
     <h2>Характеристики:</h2>
-    <p>{{ product.Specifications }}</p>
+
+    {% if product.speed %}
+        <p>Скорость: {{ product.speed }} км/ч</p>
+    {% endif %}
+
+    {% if product.ram %}
+        <p>Размер оперативной памяти: {{ product.ram }} ГБ</p>
+    {% endif %}
+
+    {% if product.year %}
+        <p>Год релиза: {{ product.year }}</p>
+    {% endif %}
+
+    {% if product.os %}
+        <p>Операционная система: {{ product.os }}</p>
+    {% endif %}
 </div>
 
 <div class="productDescription">
