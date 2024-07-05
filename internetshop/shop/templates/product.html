@@ -28,6 +28,11 @@
     </div>
 </div>
 
+<div class="productSpecifications">
+    <h2>Характеристики:</h2>
+    <p>{{ product.Specifications }}</p>
+</div>
+
 <div class="productDescription">
     <h2>Описание:</h2>
     <p>{{ product.description }}</p>
@@ -45,7 +50,7 @@
 
     <form class="createReview">
         <label for="author">Автор:</label>
-        <input name="author" >
+        <input name="author" placeholder="Укажите ваше имя">
         <label for="rating">Оценка:</label>
         <input name="rating" placeholder="Укажите вашу оценку" >
 

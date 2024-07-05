@@ -48,7 +48,7 @@ h1 {
     margin-top: 30;
     width: 200px;
     height: 200px;
-    border-radius: 40px;
+
     margin-left: 20;
     margin-bottom: 30;
 }
@@ -187,9 +187,12 @@ button1 {
 }
 
 .productImage {
-    max-width:40%;
-    max-height:500%;
-    border-radius: 40px;
+    margin-top: 20;
+    max-width: 40%;
+    max-height: 500%;
+
+    margin-bottom: 20;
+    margin-left: 20;
 }
 
 .filter {
@@ -230,10 +233,11 @@ a {
 }
 
 .price-container {
-    text-align: center;
-    margin-left: -15px;
-}
 
+    width: 30%;
+    text-align: right;
+    margin-left: 290;
+}
 .price {
     margin-left: auto;
     text-align: center;
@@ -300,4 +304,40 @@ label {
 
 .productDescription p {
     margin-left:15px;
+}
+
+.productTitle h2 {
+    width: 100%;
+    padding: 0px !important;
+}
+
+.productSpecifications {
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    border-radius: 40px;
+
+    background: white;
+
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.productSpecifications p{
+
+    width: 93%;
+    padding-left: 30;
+
+}
+
+.productSpecifications p {
+    margin-left:15px;
+}
+
+.productSpecifications h2 {
+    padding-left: 50px;
+    margin-top: 8px;
+    margin-bottom: 0;
 }
