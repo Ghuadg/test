@@ -235,10 +235,14 @@ a {
 }
 
 .price-container {
+    height: 8%;
 
-    width: 30%;
-    text-align: right;
-    margin-left: 290;
+    border-radius: 40px;
+    margin-left: auto;
+    text-align: center;
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-between;
 }
 .price {
     margin-left: auto;
@@ -343,3 +347,4 @@ label {
     margin-top: 8px;
     margin-bottom: 0;
 }
+
