@@ -45,3 +45,6 @@ def view_product(request, id):
         'product': product,
         'reviews': reviews,
     })
+
+def payment(request):
+    return render(request, "payment.html")

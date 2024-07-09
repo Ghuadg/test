@@ -54,9 +54,32 @@
 </div>
 
 <div class="productDescription">
+
+    <h2>Форма для отзыва:</h2>
+
+     <form class="createReview" method="post">
+        {% csrf_token %}
+        <label for="author">Автор:</label>
+        <input name="author" placeholder="Укажите ваше имя" required>
+        <label for="rating">Оценка:</label>
+        <select name="rating" required>
+             <option value="0">Отрицательная</option>
+            <option value="1">Положительная</option>
+        </select>
+
+
+        <label for="duration">Срок использования (в месяцах):</label>
+        <input name="duration" placeholder="Укажите срок использования" required >
+        <label for="review">Текст отзыва:</label>
+        <textarea name="review" placeholder="Оставьте ваш отзыв" required></textarea>
+        <button>Опубликовать</button>
+    </form>
+</div>
+
+<div class="productDescription">
     <h2>Отзывы:</h2>
-    {% for review in reviews %}
     <p>Мы ценим ваше мнение! Пожалуйста, оставьте отзыв о наших товарах и услугах, чтобы помочь нам улучшиться и помочь другим клиентам сделать правильный выбор. Ваше мнение важно для нас!</p>
+    {% for review in reviews %}
     <div class="review">
         <h3>Автор: {{ review.author }} </h3>
         <h3>Оценка: {% if review.rating == 0 %}</h3>
@@ -68,22 +91,7 @@
         <h3>Текст отзыва: {{ review.text }}</h3>
     </div>
     {% endfor %}
-
-    <form class="createReview" method="post">
-        {% csrf_token %}
-        <label for="author">Автор:</label>
-        <input name="author" placeholder="Укажите ваше имя">
-        <label for="rating">Оценка:</label>
-        <select name="rating">
-             <option value="0">Отрицательная</option>
-            <option value="1">Положительная</option>
-        </select>
+</div>>
 
 
-        <label for="duration">Срок использования (в месяцах):</label>
-        <input name="duration" placeholder="Укажите срок использования" >
-        <label for="review">Текст отзыва:</label>
-        <textarea name="review" placeholder="Оставьте ваш отзыв"></textarea>
-        <button>Опубликовать</button>
-    </form>
 <div>
