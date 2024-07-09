@@ -55,19 +55,30 @@
 
 <div class="productDescription">
     <h2>Отзывы:</h2>
+    {% for review in reviews %}
     <p>Мы ценим ваше мнение! Пожалуйста, оставьте отзыв о наших товарах и услугах, чтобы помочь нам улучшиться и помочь другим клиентам сделать правильный выбор. Ваше мнение важно для нас!</p>
     <div class="review">
-        <h3>Автор: </h3>
-        <h3>Оценка: <span style="color: green">положительная</span></h3>
-        <h3>Срок использования: <span style="color: green">12 месяцев</span></h3>
-        <p>Отзыв</p>
+        <h3>Автор: {{ review.author }} </h3>
+        <h3>Оценка: {% if review.rating == 0 %}</h3>
+            <span style="color: red">отрицательная</span>
+            {% else %}
+            <span style="color: green">положительная</span>
+            {% endif %}
+        <h3>Срок использования: {{ review.usage_duration }} месяцев</h3>
+        <h3>Текст отзыва: {{ review.text }}</h3>
     </div>
+    {% endfor %}
 
-    <form class="createReview">
+    <form class="createReview" method="post">
+        {% csrf_token %}
         <label for="author">Автор:</label>
         <input name="author" placeholder="Укажите ваше имя">
         <label for="rating">Оценка:</label>
-        <input name="rating" placeholder="Укажите вашу оценку" >
+        <select name="rating">
+             <option value="0">Отрицательная</option>
+            <option value="1">Положительная</option>
+        </select>
+
 
         <label for="duration">Срок использования (в месяцах):</label>
         <input name="duration" placeholder="Укажите срок использования" >
@@ -75,3 +86,4 @@
         <textarea name="review" placeholder="Оставьте ваш отзыв"></textarea>
         <button>Опубликовать</button>
     </form>
+<div>
