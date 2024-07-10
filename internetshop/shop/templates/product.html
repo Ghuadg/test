@@ -17,14 +17,17 @@
     <button1>Профиль<button1>
 </div>
 
-<div class="product">
-    <img class='productimage' src="{{ product.image_url }}"/>
-    <div class="productTitle">
-        <h2>{{ product.name }}</h2>
+<div class="productTitle">
+  <div class="product">
+    <img class="productimage" src="{{ product.image_url }}"/>
+    <div class="ghid">
+      <h2>{{ product.name }}</h2>
+      <div class="price-button">
         <h3 class="priceproduct">{{ product.price }} ₽</h3>
         <button>Купить</button>
-        </div>
+      </div>
     </div>
+  </div>
 </div>
 
 <div class="productDescription">

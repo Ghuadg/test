@@ -19,7 +19,7 @@ h1 {
     margin: 0px auto 0;
     display: flex;
     align-items: center;
-    height: 90px; /* уменьшить высоту */
+    height: 90px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -403,9 +403,103 @@ span.review-text {
     margin-top: 22;
 }
 
-.productTitle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+h3.priceproduct {
+    text-align: center;
+    width: 40%;
 }
 
+.producttitle button {
+    display: flex;
+    align-items: center;
+
+}
+
+.textabout {
+    margin: 10px auto;
+    margin-right: 3% ;
+    background-color: #ffffff;
+    width: 11%;
+    height: 10%;
+    text-align: center;
+    justify-content: center;
+    line-height: 100px;
+    margin-left: 20px;
+    border-radius: 40px;
+}
+
+.descriptionshop {
+
+    width: 68%;
+    margin-right: auto;
+    background: white;
+    border-radius: 40px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h4 {
+    color: #333 ;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h5 {
+    margin-top: 10;
+    margin-bottom: 10;
+    margin-left: 10px;
+    font-size: 32px;
+}
+
+.all {
+    display: flex;
+
+}
+
+h6 {
+    margin-top: 10;
+    margin-bottom: 10;
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+.historycard {
+      padding: 20;
+      width: 23%;
+      background-color: #efefef;
+      height: 100px;
+      margin: 0 auto;
+      box-shadow: 2px 2px 2px #0000001a;
+      border-radius: 16px;
+      display: flex;
+
+}
+
+.history {
+
+    margin-bottom: 10;
+    display:flex;
+}
+
+.ghid button {
+    margin-left: 0px;
+}
+
+.ghid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price-button {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.priceproduct {
+  margin-right: 10px;
+}
