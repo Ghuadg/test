@@ -48,3 +48,6 @@ def view_product(request, id):
 
 def payment(request):
     return render(request, "payment.html")
+
+def aboutus(request):
+    return render(request, "aboutus.html")

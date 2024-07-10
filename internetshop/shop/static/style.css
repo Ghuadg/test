@@ -189,10 +189,9 @@ button1 {
 }
 
 .productImage {
-    margin-top: 20;
+    margin-right: 30;
     max-width: 40%;
     max-height: 500%;
-
     margin-bottom: 20;
     margin-left: 20;
 }
@@ -361,3 +360,52 @@ label {
 
     padding: 10px;
 }
+
+.review-author-label {
+  font-weight: bold;
+}
+
+.review-author-name {
+  font-weight: normal;
+}
+
+.negative {
+    color: red;
+}
+
+.positive {
+    color: #32CD32;
+}
+
+input#negative {
+    margin-left: 20px;
+}
+
+input#positive {
+    margin-left: 20px;
+}
+
+.review-text-label {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+}
+
+.review-text {
+  display: inline-block;
+  vertical-align: top;
+}
+
+span.review-text {
+    margin-bottom: 20px;
+    margin-right: 14px;
+    margin-left: 14px;
+    margin-top: 22;
+}
+
+.productTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
