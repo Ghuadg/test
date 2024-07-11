@@ -17,17 +17,29 @@
     <button1>Профиль<button1>
 </div>
 
+
+
 <div class="productTitle">
-  <div class="product">
-    <img class="productimage" src="{{ product.image_url }}"/>
-    <div class="ghid">
-      <h2>{{ product.name }}</h2>
-      <div class="price-button">
-        <h3 class="priceproduct">{{ product.price }} ₽</h3>
-        <button>Купить</button>
-      </div>
+
+    <div class="product">
+
+        <img class="productimage" src="{{ product.image_url }}"/>
+
+            <div class="ghid">
+                <img class='logo' src="https://i.postimg.cc/6qDB1Cds/9dc3e2df9326ce99e332feb4ee5f86ef3e2d7612ef75ea927683d6d7c70e6a9b.png">
+            <h2>{{ product.name }}</h2>
+            <div class="price-button">
+                <h3 class="priceproduct">{{ product.price }} ₽</h3>
+                <button>Купить</button>
+            </div>
+            <h2>Гарантия:</h2>
+            <div class="dateuse">
+                <h3>12 месяцев</h3>
+            </div>
+
+
+        </div>
     </div>
-  </div>
 </div>
 
 <div class="productDescription">
