@@ -51,3 +51,6 @@ def payment(request):
 
 def aboutus(request):
     return render(request, "aboutus.html")
+
+def productlist(request):
+    return render(request, "productlist.html")
