@@ -54,3 +54,6 @@ def aboutus(request):
 
 def productlist(request):
     return render(request, "productlist.html")
+
+def profile(request):
+    return render(request, "profile.html")

@@ -17,9 +17,10 @@
 </div>
 
 <div class="profile">
-
+<a href="/profile">
     <button1><img src = "https://i.postimg.cc/Mp5qrQG0/image.png"/><button1>
     <button1>Профиль<button1>
+</a>
 </div>
 
 
@@ -42,10 +43,12 @@
                 <h10>12 месяцев</h10>
             </div>
             <div class="xap">
-                <p>Экран:</p>
-                <p>Процессор:</p>
-                <p>Память:</p>
-                <p>Поддержка сетей:</p>
+
+            {% if product.memory %}
+                <p>Память: {{ product.memory }}</p>
+            {% endif %}
+
+
             </div>
         </div>
     </div>
@@ -69,6 +72,8 @@
     {% if product.os %}
         <p>Операционная система: {{ product.os }}</p>
     {% endif %}
+
+
 </div>
 
 <div class="productDescription">

@@ -8,6 +8,8 @@ class Product(models.Model):
     description = models.TextField()
     price = models.IntegerField()
     image_url = models.CharField(max_length=1024)
+    memory = models.CharField(max_length=1028)
+
 
 
     speed = models.IntegerField(null=True, blank=True)

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 
 * {
-    ``font-family: "Didact Gothic";``
+    font-family: "Didact Gothic";
 }
 
 
@@ -124,17 +124,17 @@ button1 {
 }
 
 .profile img {
-    width: 50px; /* Ширина изображения */
-    height: 50px; /* Высота изображения */
-    vertical-align: top; /* Выравнивание изображения по верхнему краю */
+    width: auto;
+    height: 50px;
+    vertical-align: top;
     margin: 6;
 }
 
 .profile button1 {
-    font-size: 16px; /* Размер текста */
+    font-size: 16px;
 
-    vertical-align: top; /* Выравнивание текста по верхнему краю */
-    margin-left: 16px; /* Отступ слева от изображения */
+    vertical-align: top;
+    margin-left: 16px;
 
 }
 
@@ -191,7 +191,7 @@ button1 {
 .productImage {
     margin-right: 30;
     max-width: 40%;
-    max-height: 500%;
+        max-height: 100%;
     margin-bottom: 20;
     margin-left: 20;
     margin-top: 20;
@@ -583,9 +583,69 @@ h16 {
     text-align: center;
 }
 
-.dinner {
-     display: flex;
-  justify-content: center;
-  align-items: center;
+
+
+.xap p {
+    padding-left: 0;
 }
 
+.auth h15{
+    margin-top: 0px;
+    text-align: center !important;
+    border-radius:40px;
+}
+
+.auth {
+    border-radius: 40px;
+    width: 50%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 30px;
+    text-align: center;
+}
+
+h15 {
+    margin-top: 30px;
+    padding-top:10px;
+    padding-bottom: 20px;
+    font-size: 60px;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.auth img {
+    border-radius: 20px;
+    width: 15%;
+    margin-bottom: 30px;
+}
+
+.authtext {
+    padding-bottom: 13px;
+    font-size: 120%;
+    color: black;
+    margin: 10px auto;
+    padding-top:10px;
+    border-radius: 40px;
+    width: 40%;
+    height: 40px;
+    background-color: #efefef;
+}
+
+.auth input {
+    text-align: center;
+    border: none;
+}
+
+.buttonauth button {
+       padding-top: 6px;
+    padding-bottom: 50px;
+    font-size: 30px;
+    margin-top: 10px;
+    width: 40%;
+    border-radius: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+}
