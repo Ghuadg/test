@@ -1,9 +1,14 @@
 
 from django.http import HttpResponse
 from django.shortcuts import render
+import telebot
+
 
 from .models import Product, Review
 
+from .config import BOT_TOKEN, CHAT_ID
+
+bot = telebot.TeleBot(BOT_TOKEN)
 # Create your views here.
 
 def home(request):
@@ -46,8 +51,26 @@ def view_product(request, id):
         'reviews': reviews,
     })
 
-def payment(request):
-    return render(request, "payment.html")
+def payment(request, id):
+    product = Product.objects.filter(id=id).first()
+
+    if request.method == "POST":
+        name = request.POST.get('name')
+        address = request.POST.get('address')
+        # Send message to Telegram
+        bot.send_message(CHAT_ID, f'''📦 Новый заказ: {product.name}
+💸 Цена: {product.price} рублей
+ФИО покупателя: {name}
+Адрес доставки: {address}
+''')
+
+       
+
+    return render(request, "payment.html", {
+        'product': product
+    })
+
+
 
 def aboutus(request):
     return render(request, "aboutus.html")

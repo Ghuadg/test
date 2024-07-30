@@ -1,18 +1,45 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'style.css' %}">
 
-<div class="header-strip">
-
-<h1><span style="color: 0000ff">Просто</span>Шоп</h1>
+<a class = "navlink" href="/"><h1><span style="color: 0000ff">Просто</span>Шоп</h1></a>
 
 
+<div class="header-strip"></div>
+<div class="legenda">
+    <h1>Просто магазин электроники</h1>
+</div>
+
+<div class="navigation">
+<a class = "navlink" href="/">Главная</a>
+<a class = "navlink" href="/productlist">Товары</a>
+<a class = "navlink" href="/aboutus">О нас</a>
+</div>
+
+
+
+<div class="profile">
+<a href="/profile">
+    <button1><img src = "https://i.postimg.cc/Mp5qrQG0/image.png"/><button1>
+    <button1>Профиль<button1>
+</a>
 </div>
 
 <div class="paymentCard">
-    <h2>Товар: Моноколесо</h2>
-    <img class="productImage" src="/static/copertina.webp">
-    <h2>К оплате: 200 рублей</h2>
+    <h2>Товар: {{ product.name }}</h2>
+    <img class="productImage" src="{{ product.image_url }}">
+    <h2>К оплате: {{ product.price }} рублей</h2>
     <h3>Реквезиты для перевода:</h3>
     <h2>+78005553535</h2>
     <h2>Иванов И. И.</h2>
+    <div class="vspace"></div>
+    <form class="paymentForm" method="post">
+        {% csrf_token %}
+        <label>Адрес доставки:</label>
+        <input name="address" required>
+        <label>Ваше ФИО:</label>
+        <input name="name" required>
+        <div class="vspace"></div>
+        <div class="vspace"></div>
+        <button class="paymentButton">Оплатил</button>
+    </form>
 </div>

@@ -36,7 +36,9 @@
             <h2>{{ product.name }}</h2>
             <div class="price-button">
                 <h10 class="priceproduct">{{ product.price }} ₽</h10>
-                <button>Купить</button>
+                <a href="/payment/{{ product.id }}">
+                    <button>Купить</button>
+                </a>
             </div>
             <h2>Гарантия:</h2>
             <div class="dateuse">
