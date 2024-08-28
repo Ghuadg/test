@@ -1,8 +1,8 @@
 
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 import telebot
-
+import os
 
 from .models import Product, Review
 
@@ -57,14 +57,15 @@ def payment(request, id):
     if request.method == "POST":
         name = request.POST.get('name')
         address = request.POST.get('address')
+        number = request.POST.get('number')
         # Send message to Telegram
         bot.send_message(CHAT_ID, f'''📦 Новый заказ: {product.name}
 💸 Цена: {product.price} рублей
 ФИО покупателя: {name}
 Адрес доставки: {address}
+Номер телефона покупателя для связи: {number}
 ''')
-
-       
+        return redirect('/paymentend')
 
     return render(request, "payment.html", {
         'product': product
@@ -80,3 +81,7 @@ def productlist(request):
 
 def profile(request):
     return render(request, "profile.html")
+
+def paymentend(request):
+    return render(request, "paymentend.html")
+

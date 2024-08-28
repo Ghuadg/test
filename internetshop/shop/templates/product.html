@@ -32,7 +32,7 @@
         <img class="productimage" src="{{ product.image_url }}"/>
 
             <div class="ghid">
-                <img class='logo' src="https://i.postimg.cc/6qDB1Cds/9dc3e2df9326ce99e332feb4ee5f86ef3e2d7612ef75ea927683d6d7c70e6a9b.png">
+
             <h2>{{ product.name }}</h2>
             <div class="price-button">
                 <h10 class="priceproduct">{{ product.price }} ₽</h10>
@@ -100,7 +100,7 @@
     </div>
 
     <label for="duration">Срок использования (в месяцах):</label>
-    <input name="duration" placeholder="Укажите срок использования" required>
+    <input name="duration" type="number" placeholder="Укажите срок использования" required>
     <label for="review">Текст отзыва:</label>
     <textarea name="review" placeholder="Оставьте ваш отзыв" required></textarea>
     <button>Опубликовать</button>
@@ -111,11 +111,16 @@
   <h2>Отзывы:</h2>
   <p>Мы ценим ваше мнение! Пожалуйста, оставьте отзыв о наших товарах и услугах, чтобы помочь нам улучшиться и помочь другим клиентам сделать правильный выбор. Ваше мнение важно для нас!</p>
   {% for review in reviews %}
-  <div class="review">
-    <h3 class="review-author">
-      <span class="review-author-label">Автор:</span>
-      <span class="review-author-name">{{ review.author }}</span>
-    </h3>
+</div>
+
+<div class="productDescription">
+    <div class="review">
+        <h3 class="review-author">
+            <span class="review-author-label">
+                <img src="https://www.pngall.com/wp-content/uploads/12/Avatar-PNG-Image.png" alt="Avatar"/>
+            </span>
+            <span class="review-author-name">{{ review.author }}</span>
+        </h3>
     <h3>Оценка:
       {% if review.rating == 0 %}
         <span style="color: red">отрицательная</span>
@@ -129,6 +134,7 @@
     </h3>
     <h3 class="review-text-label">Текст отзыва:</h3>
     <span class="review-text">{{ review.text }}</span>
+        <span class="review-date">{{ review.published_at }}</span>
   </div>
   {% endfor %}
 </div>
