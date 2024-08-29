@@ -28,3 +28,5 @@ class Review(models.Model):
         usage_duration = models.IntegerField()
         text = models.TextField()
         published_at = models.DateTimeField(auto_now_add=True)
+
+

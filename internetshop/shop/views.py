@@ -85,3 +85,13 @@ def profile(request):
 def paymentend(request):
     return render(request, "paymentend.html")
 
+from django.http import JsonResponse
+from .models import Product
+
+def autocomplete(request):
+    query = request.GET.get('query')
+    if query:
+        products = Product.objects.filter(name__icontains=query).values('name')
+        suggestions = [product['name'] for product in products]
+        return JsonResponse(suggestions, safe=False)
+    return JsonResponse([], safe=False)
