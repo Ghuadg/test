@@ -723,11 +723,32 @@ span.review-date {
 
 .complete {
     border-radius: 40px;
-    padding: 10px;
+    
     background-color: white;
     margin-right: auto;
     margin-left: auto;
     width: 68%;
+}
 
-    padding-left: 20px;
+.legenda1 {
+    text-align: center;
+    background-color: white;
+}
+
+
+.legenda1 h1 {
+
+    padding-bottom: 010;
+    background-color: white;
+    font-size: 16px !important;
+    height: 10px;
+    font-size: 10px;
+}
+
+.titleend {
+    margin-top: 30px;
+}
+
+.endd {
+    margin-top: 300px;
 }

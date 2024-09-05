@@ -85,6 +85,9 @@ def profile(request):
 def paymentend(request):
     return render(request, "paymentend.html")
 
+def delivery(request):
+    return render(request, "delivery.html")
+
 from django.http import JsonResponse
 from .models import Product
 
@@ -95,3 +98,4 @@ def autocomplete(request):
         suggestions = [product['name'] for product in products]
         return JsonResponse(suggestions, safe=False)
     return JsonResponse([], safe=False)
+

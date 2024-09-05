@@ -10,7 +10,8 @@ urlpatterns = [
     path('productlist', views.productlist, name='productlist'),
     path('profile', views.profile, name='profile'),
     path('paymentend', views.paymentend, name='paymentend'),
-    path('autocomplete/', autocomplete, name='autocomplete')
+    path('autocomplete/', autocomplete, name='autocomplete'),
+    path('delivery', views.delivery, name='delivery')
 
 ]
 
